@@ -1,0 +1,12 @@
+{
+    "name": "testproject",
+    "description": "Test Project",
+    "devDependencies": {
+        "run-script-os": "^1.1.6"
+    },
+    "scripts": {
+        "postinstall": "run-script-os",
+        "postinstall:linux": "pip3 install pre-commit && pre-commit install",
+        "postinstall:win32": "pip3 install pre-commit && pre-commit install"
+    }
+}
